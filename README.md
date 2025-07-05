@@ -26,9 +26,22 @@ graph TD
 | `/insights`       | POST   | LLM-based insight        |
 
 
-## Interactive Docs
+## Interactive API Docs
 
-- Swagger: [`/docs`](http://127.0.0.1:8000/docs)
+You can test the endpoints and review schemas at:
+
+git:
+uvicorn insights:app --reload
+
+
+- Swagger UI (interactive and user-friendly API documentation): [`/docs`](http://127.0.0.1:8000/docs)
+- ReDoc(well-structured, human-readable API specification): [`/redoc`](http://127.0.0.1:8000/redoc)
+- OpenAPI Schema (machine-readable API definition in JSON format): [`/openapi.json`](http://127.0.0.1:8000/openapi.json)
+
+
+
+
+
 
 ```
 
