@@ -22,9 +22,9 @@ graph TD
 
 ## API Endpoint Specifications
 
-| Endpoint    | Method | Purpose            | Request Example   | Response Example vvvv  |          |
-|-------------|--------|--------------------|-------------------|------------------------|
-| `/insights` | POST   | LLM-based insight  |{ "query": "..." } | { "insights": "..." }  |
+| Endpoint    | Method | Purpose            | Request Example   | Response Example       |            
+|-------------|--------|--------------------|-------------------|------------------------|      
+| `/insights` | POST   | LLM-based insight  |{ "query": "..." } | { "insights": "..." }  |      
 
 
 ## Technology Stack  
