@@ -11,7 +11,6 @@ graph TD
 
 
 
-["API Endpoint Specifications"]
 
 | Endpoint          | Method | Description                            | Request Body                | Response                        |
 |------------------|--------|----------------------------------------|-----------------------------|---------------------------------|
