@@ -18,7 +18,7 @@ graph TD
 
 
 
-```markdown
+
 ## API Endpoint Specifications
 
 | Endpoint    | Method | Purpose            |
@@ -30,8 +30,9 @@ graph TD
 You can test the endpoints and review schemas locally:
 
 
-git:
+```bash
 uvicorn insights:app --reload
+```
 
 
 - **Swagger UI** (interactive and user-friendly): [`/docs`](http://127.0.0.1:8000/docs)  
@@ -49,11 +50,9 @@ uvicorn insights:app --reload
 
 
 
-```
 
 
-```bash
-uvicorn insights:app --reload
+
 
 
 
