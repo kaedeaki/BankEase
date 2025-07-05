@@ -30,11 +30,6 @@ graph TD
 You can test the endpoints and review schemas locally:
 
 
-
-## Interactive API Docs
-
-You can test the endpoints and review schemas at:
-
 git:
 uvicorn insights:app --reload
 
@@ -57,7 +52,8 @@ uvicorn insights:app --reload
 ```
 
 
-
+```bash
+uvicorn insights:app --reload
 
 
 
