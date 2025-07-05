@@ -65,11 +65,8 @@ GROQ_API_KEY=your_groq_api_key_here
 ## 🔐 Environment Setup    
 1. Clone the repository    
 2. Create a `.env` file with your API key    
-3. Install dependencies:   
+3. Install dependencies   
 
-```bash
-pip install -r requirements.txt
-```
 
 
 ## Interactive API Docs
