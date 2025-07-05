@@ -22,10 +22,20 @@ graph TD
 
 ## API Endpoint Specifications
 
-| Endpoint    | Method | Purpose            |
-|-------------|--------|--------------------|
-| `/insights` | POST   | LLM-based insight  |
+| Endpoint    | Method | Purpose            | Request Example   | Response Example vvvv  |          |
+|-------------|--------|--------------------|-------------------|------------------------|
+| `/insights` | POST   | LLM-based insight  |{ "query": "..." } | { "insights": "..." }  |
 
+
+## Technology Stack  
+
+* Framework: FastAPI  
+
+* Language: Python 3.10+
+
+* Libraries: fastapi, Pydantic, Uvicorn, Facebook Prophet, Groq SDK/API
+
+* Docs: Auto-generated with Swagger UI and ReDoc
 
 
 ## 📁 Project Structure
