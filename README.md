@@ -29,13 +29,13 @@ graph TD
 
 ## Technology Stack  
 
-* Framework: FastAPI  
+* **Framework**: FastAPI  
 
-* Language: Python 3.10+
+* **Language**: Python 3.10+
 
-* Libraries: fastapi, Pydantic, Uvicorn, Facebook Prophet, Groq SDK/API
+* **Libraries**: fastapi, Pydantic, Uvicorn, Facebook Prophet, Groq SDK/API
 
-* Docs: Auto-generated with Swagger UI and ReDoc
+* **Docs**: Auto-generated with Swagger UI and ReDoc
 
 
 ## 📁 Project Structure
