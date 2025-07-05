@@ -26,10 +26,36 @@ graph TD
 |-------------|--------|--------------------|
 | `/insights` | POST   | LLM-based insight  |
 
+
+
+## 📁 Project Structure
+
+bankease_agentic_app/
+├── backend_api/
+│ └── insights.py # Entry point of the FastAPI app (defines /insights endpoint)
+├── logic/
+│ ├── insights_agent2.py # Logic for insight generation using Prophet + LLM
+│ └── prompts.py # Prompt templates for LLM
+└── utils/
+  ├── logger.py # JSONL logger for saving insight events
+  └── chatbot_logs.jsonl # Output file for chat logs and system actions (generated locally)
+
+
+> 💡 Note: `chatbot_logs.jsonl` is not included in the repository. It will be generated when you run the application locally.
+
+## 🔐 Environment Configuration
+
+You must create a `.env` file in the root directory before running the app. This file should contain the following:
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+
+
+
+
 ## Interactive API Docs
 
-You can test the endpoints and review schemas locally:
-
+To run the FastAPI server locally:
 
 ```bash
 uvicorn insights:app --reload
