@@ -32,13 +32,14 @@ graph TD
 
 bankease_agentic_app/  
 ├── backend_api/  
-│ └── insights.py # Entry point of the FastAPI app (defines /insights endpoint)  
+│ ├── insights.py # Entry point of the FastAPI app (defines /insights endpoint)  
+│ └── chatbot_logs.jsonl # Output file for chat logs and system actions (generated locally) 
 ├── logic/  
 │ ├── insights_agent2.py # Logic for insight generation using Prophet + LLM  
 │ └── prompts.py # Prompt templates for LLM  
 └── utils/  
-  ├── logger.py # JSONL logger for saving insight events  
-  └── chatbot_logs.jsonl # Output file for chat logs and system actions (generated locally)  
+  └── logger.py # JSONL logger for saving insight events  
+   
 
 
 > 💡 Note: `chatbot_logs.jsonl` is not included in the repository. It will be generated when you run the application locally.
