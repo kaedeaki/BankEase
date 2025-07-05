@@ -7,3 +7,13 @@ graph TD
   Chatbot -->|POST /insights| Backend
   UI -->|POST /insights| Backend
   Backend --> MLModels
+
+
+
+```markdown
+## API Endpoint Specifications
+
+| Endpoint          | Method | Description                            | Request Body                | Response                        |
+|------------------|--------|----------------------------------------|-----------------------------|---------------------------------|
+| `/insights`       | POST   | Generate LLM-based financial insight   | `{query, user_id}`          | `{insight: "...text..."}`       |
+| `/health`         | GET    | Status check for backend service       | N/A                         | `{"status": "ok"}`             |
