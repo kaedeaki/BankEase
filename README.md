@@ -5,5 +5,5 @@ graph TD
   User --> Chatbot
   User --> UI
   Chatbot -->|POST /insights| Backend
-  UI -->|POST /recommendation| Backend
+  UI -->|POST /insights| Backend
   Backend --> MLModels
