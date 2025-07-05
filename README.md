@@ -16,12 +16,6 @@ graph TD
   Backend --> MLModels
 
 
-⚙️ Tech Stack
-FastAPI – Backend API framework
-
-Prophet – Time series forecasting
-
-LLM (via Groq) – Large language model insight generation
 
 
 
