@@ -9,12 +9,11 @@ It is designed to work with both a chatbot and a frontend UI for delivering insi
 
 ```mermaid
 graph TD
-  User --> Chatbot
-  User --> UI
-  Chatbot -->|POST /insights| Backend
-  UI -->|POST /insights| Backend
-  Backend --> MLModels
-　
+  User --> Chatbot/UI
+  Chatbot/UI -->|POST /insights| Backend
+  Backend --> Forecasting
+  Forecasting --> LLM
+  LLM -->|Summarized Output| Chatbot/UI
 ```
 
 
@@ -22,9 +21,9 @@ graph TD
 
 ## API Endpoint Specifications
 
-| Endpoint    | Method | Purpose            | Request Example   | Response Example       |            
-|-------------|--------|--------------------|-------------------|------------------------|      
-| `/insights` | POST   | LLM-based insight  |{ "query": "..." } | { "insights": "..." }  |      
+| Endpoint    | Method | Description                               | Request                                                                    | Response                                             |            
+|-------------|--------|-------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------|      
+| `/insights` | POST   | Generate forecast and LLM-based insights  |{ "user_id": "string", "account_id": "string", - "transaction_data":[+ {...}]} | { "title": "Spending Insights", "snippet": "..."  }  |      
 
 
 ## Technology Stack  
@@ -65,7 +64,8 @@ GROQ_API_KEY=your_groq_api_key_here
 ## 🔐 Environment Setup    
 1. Clone the repository    
 2. Create a `.env` file with your API key    
-3. Install dependencies   
+3. cd backend_api
+4. Install dependencies
 
 
 
