@@ -14,7 +14,23 @@ graph TD
   Chatbot -->|POST /insights| Backend
   UI -->|POST /insights| Backend
   Backend --> MLModels
+```
 
+
+
+```markdown
+## API Endpoint Specifications
+
+| Endpoint          | Method | Purpose                  |
+|------------------|--------|--------------------------|
+| `/insights`       | POST   | LLM-based insight        |
+
+
+## Interactive Docs
+
+- Swagger: [`/docs`](http://127.0.0.1:8000/docs)
+
+```
 
 
 
