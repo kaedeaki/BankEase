@@ -33,14 +33,14 @@ You can test the endpoints and review schemas at:
 git:
 uvicorn insights:app --reload
 
-- **Swagger UI** (interactive and user-friendly): [`/docs/Swagger_UI_backendAPI.jpg`](http://127.0.0.1:8000/docs)  
-  ↳ [Example Requests (Markdown)](docs/api_example_requests.md)
+- **Swagger UI** (interactive and user-friendly): [`/docs`](http://127.0.0.1:8000/docs)  
+  ↳ [Example Requests (Markdown)](docs/Swagger_UI_backendAPI.jpg)
 
 - **ReDoc** (well-structured, human-readable): [`/redoc`](http://127.0.0.1:8000/redoc)  
-  ↳ [Supplemental Notes](docs/redoc_notes.md)
+  ↳ [Supplemental Notes](docs/ReDoc_backendAPI.jpg)
 
 - **OpenAPI Schema** (machine-readable JSON): [`/openapi.json`](http://127.0.0.1:8000/openapi.json)  
-  ↳ ![OpenAPI Diagram](docs/openapi_diagram.png)
+  ↳ ![OpenAPI Diagram](docs/openapi.json)
 
 
 
