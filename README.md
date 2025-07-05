@@ -1,4 +1,11 @@
-["API Integration Flow"]
+# 📊 Financial Insight API
+
+This project provides a FastAPI backend to generate LLM-based financial insights and forecasts.  
+It is designed to work with both a chatbot and a frontend UI for delivering insights to users in real time.
+
+---
+
+## 🔁 API Integration Flow
 
 ```mermaid
 graph TD
@@ -9,10 +16,14 @@ graph TD
   Backend --> MLModels
 
 
+⚙️ Tech Stack
+FastAPI – Backend API framework
+
+Prophet – Time series forecasting
+
+LLM (via Groq) – Large language model insight generation
 
 
 
-| Endpoint          | Method | Description                            | Request Body                | Response                        |
-|------------------|--------|----------------------------------------|-----------------------------|---------------------------------|
-| `/insights`       | POST   | Generate LLM-based financial insight   | `{query, user_id}`          | `{insight: "...text..."}`       |
-| `/health`         | GET    | Status check for backend service       | N/A                         | `{"status": "ok"}`             |
+
+
