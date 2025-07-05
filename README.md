@@ -10,7 +10,7 @@ graph TD
 
 
 
-```markdown
+
 ## API Endpoint Specifications
 
 | Endpoint          | Method | Description                            | Request Body                | Response                        |
