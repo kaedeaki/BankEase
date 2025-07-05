@@ -37,7 +37,7 @@ bankease_agentic_app/
 ├── logic/    
 │ ├── insights_agent2.py # Logic for insight generation using Prophet + LLM  
 │ └── prompts.py # Prompt templates for LLM  
-└── utils/  
+└── utils/    
   └── logger.py # JSONL logger for saving insight events  
    
 
